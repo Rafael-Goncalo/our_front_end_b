@@ -14,7 +14,7 @@ export const AllClubsPage = () => {
 {/* .map creates a new array of JSX elements with the info inside allClubs */}
         {allClubs.map((oneClub) => {
             return (
-            <div key= {oneClub._id} className='one-club-card'>
+            <div key= {oneClub._id} className='one-fest-card'>
              <h3>Club: {oneClub.clubName}</h3>
              <h3>City: {oneClub.location}</h3>
              <h3>Party: {oneClub.event}</h3> 

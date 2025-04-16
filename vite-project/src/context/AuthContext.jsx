@@ -69,3 +69,5 @@ return (
     </AuthContext.Provider>
 );
 }
+
+export const { AuthContext, AuthContextProvider };
