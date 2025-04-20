@@ -54,7 +54,7 @@ useEffect(() => { authenticateAdmin(); }, []);
 async function handleLogout() {
     localStorage.removeItem('authToken');
     await authenticateAdmin();
-    nav('/login');
+    nav('admin/login');
 }
 
 // anything after the RETURN is rendered in the DOM
@@ -70,4 +70,4 @@ return (
 );
 }
 
-export const { AuthContext, AuthContextProvider };
+export { AuthContext, AuthContextProvider };

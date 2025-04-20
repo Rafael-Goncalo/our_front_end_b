@@ -38,7 +38,7 @@ const handleLogin = async (e) => {
             console.error('Login error', error);
             setErrorMessage('Invalid email or password');
         }
-
+}
         return (
             <div className='login-container'>
                 <h2>Admin Login</h2>

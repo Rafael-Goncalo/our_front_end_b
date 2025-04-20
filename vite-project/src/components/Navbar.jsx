@@ -18,17 +18,12 @@ const Navbar = () => {
             <Link to='/allclubs'>All Clubs</Link>
             <Link to='/allfests'>All Festivals</Link>
 
-{/* ternary operator IF is ( ? ) ELSE is ( : ), think it of a fork in a road */}
-{/* what is inside the () after the ? renders IF the statement is TRUE */}
-
         { isLoggedIn ? ( 
             <>
             <Link to='/admin'>Admin</Link>
             <button onClick={ handleLogout }>Logout</button>
             </>
-             )
-{/* what is inside the () after the : renders IF the statement is FALSE */}
-             : (
+             ) : (
             <Link to='/admin/login'>Login</Link>
              )}
             
