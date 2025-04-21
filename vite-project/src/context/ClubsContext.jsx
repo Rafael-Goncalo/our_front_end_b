@@ -11,7 +11,7 @@ export const ClubContext = createContext();
 
 // CREATES & EXPORTS the provider/wrapper that will FETCH and PROVIDE information to the Context.
 // as well as SET to children everything that is between its wings <>
-export const ClubContexProvider = ({ children }) => {
+export const ClubContextProvider = ({ children }) => {
 
     
 // allClubs is the state that is empty by default and only will be updated after the function executes.
