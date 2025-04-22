@@ -8,7 +8,7 @@ import AllClubsPage from './pages/AllClubsPage'
 // import OneFestPage from './pages/OneFestPage'
 // import AdminPage from './pages/AdminPage'
 import Login from './pages/Login'
-// import Signup from './pages/Signup'
+import Signup from './pages/Signup'
 import { AuthContextProvider } from './context/AuthContext'
 
 
@@ -20,8 +20,11 @@ function App () {
         <Navbar/>
         <Routes>
           <Route path = '/' element = { <HomePage /> } />
+          <Route path = '/signup' element = { <Signup /> } />
           <Route path = '/login' element = { <Login /> } />
+          
           {/* Temporary route for Login while AdminPage is being built */}
+          <Route path="/admin/signup" element={<Signup />} />
           <Route path="/admin/login" element={<Login />} />
 
           <Route path = '/allclubs' element = { <AllClubsPage /> } >
